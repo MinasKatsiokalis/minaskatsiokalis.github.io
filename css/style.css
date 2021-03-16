@@ -1,0 +1,219 @@
+/* Fonts: 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Poiret One', cursive; 
+*/
+
+/* universal elements
+============================= */
+:root{
+    --eggshell-white: #E7DFC6;
+    --rich-black: #071013;
+    --claret-red: #680a2b;
+    --caifat-blue: #4DA1A9;
+    --coral-grey: #696D7D; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+    */
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+  
+body{
+    font-family: 'Quicksand', 'Open Sans', sans-serif;
+    min-width: 300px;
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header Section & Nav Menu
+============================= */
+
+#page-header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 70px;
+}
+
+#logo{
+    width: 20vw;
+    height: 100%;
+    min-width: max-content;
+}
+
+#logo #img-link{
+    display: flex;
+    justify-content: center;
+}
+
+#logo img{
+    max-width: 150px;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav .nav-list{
+    display: flex;
+    width: 35vw;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.nav .nav-list li{
+    width: 100px;
+    margin: 10px;
+    border-radius: 20px;
+    border: rgb(255, 251, 0) solid 1px;
+}
+
+.nav-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: var(--eggshell-white);
+}
+
+.nav-link:hover{
+    color: white;
+}
+/* Welcome Section 
+============================= */
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    background-color: var(--rich-black);
+}
+
+#welcome-wrap{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: rgb(10, 230, 83) solid 1px;
+}
+
+#welcome-wrap h1{
+    font-family:'Poiret One', cursive;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#welcome-wrap h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/*Undercore beeping animation*/
+@keyframes beeping {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.underscore{
+    font-weight: 600;
+    opacity: 0;
+    animation: beeping;
+    animation-duration: 0.75s;
+    animation-timing-function:step-start;
+    animation-iteration-count: infinite;
+}
+
+
+/* Responsiveness 
+============================= */
+
+@media screen and (max-width: 1064px){
+    .nav .nav-list{
+        width: 55vw;
+    }
+}
+
+@media screen and (max-width: 670px){
+    #page-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .nav{
+        justify-content: center;
+        border: rgb(255, 255, 255) solid 1px;
+    }
+
+    .nav .nav-list{
+        width: 100vw;
+    }
+
+    .nav .nav-list li{
+        margin: 7px;
+    }
+
+    #welcome-section{
+        padding-top: 100px;
+    }
+
+    #welcome-wrap h1{
+        font-size: 3rem;
+    }
+    
+    #welcome-wrap h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .nav .nav-list{
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .nav .nav-list li{
+        width: 100%;
+    } 
+    
+    #welcome-section{
+        padding-top: 165px;
+    }
+
+    .nav .nav-list li{
+        margin: 0px;
+        margin-top: 3px;
+    }
+}
+
+@media screen and (max-height: 420px){
+    #page-header{
+        max-height: 100px;
+    }
+}
