@@ -1,6 +1,8 @@
 ## Welcome to Minas Katsiokalis
 
 **Link of [webpage](https://minaskatsiokalis.github.io/)** 
+
+![Image](https://minaskatsiokalis.github.io/img/logo3.png)
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
