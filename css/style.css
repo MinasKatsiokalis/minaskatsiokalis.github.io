@@ -48,11 +48,13 @@ a{
     top: 0;
     width: 100%;
     min-height: 70px;
+    background-color: var(--rich-black);
+    opacity: 0.9;
+    z-index: 1;
 }
 
 #logo{
     width: 20vw;
-    height: 100%;
     min-width: max-content;
 }
 
@@ -82,8 +84,6 @@ a{
 .nav .nav-list li{
     width: 100px;
     margin: 10px;
-    border-radius: 20px;
-    border: rgb(255, 251, 0) solid 1px;
 }
 
 .nav-link{
@@ -93,12 +93,33 @@ a{
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    border-radius: 20px;
     color: var(--eggshell-white);
 }
 
 .nav-link:hover{
     color: white;
 }
+
+/* Global Sections 
+============================= */
+
+.section-wrap{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-header{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
 /* Welcome Section 
 ============================= */
 
@@ -109,27 +130,10 @@ a{
     background-color: var(--rich-black);
 }
 
-#welcome-wrap{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: rgb(10, 230, 83) solid 1px;
-}
-
-#welcome-wrap h1{
+.welcome-text{
     font-family:'Poiret One', cursive;
     font-size: 4rem;
     margin-bottom: 20px;
-}
-
-#welcome-wrap h2{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 400;
-    font-size: 2rem;
 }
 
 /*Undercore beeping animation*/
@@ -148,7 +152,82 @@ a{
     animation-iteration-count: infinite;
 }
 
+/* Project Section 
+============================= */
 
+#projects{
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    background-color: var(--coral-grey);
+}
+
+@media screen and (min-width: 1080px){
+    #projects{
+        height: 100vh;
+    }
+}
+
+#projects h2{
+    margin: 10px 0px 30px;
+}
+
+#projects-wrap{
+    padding:0 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 4rem;
+    grid-row-gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 20px;
+}
+
+.project-tile {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    background-color: var(--claret-red);
+    color: var(--eggshell-white);
+}
+
+@keyframes moving {
+    0% {transform:translateY(0px);}
+    50% {transform:translateY(10px);}
+    100% {transform:translateY(0px);}
+}
+
+.project-tile:hover{
+    animation: moving;
+    animation-duration: 0.75s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 1;
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.github{
+    display: block;
+    padding: 10px 0;
+    border-top: var(--claret-red) solid 1px; 
+    background-color: var(--coral-grey);
+}
+
+#profile-link{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--claret-red);
+}
 /* Responsiveness 
 ============================= */
 
@@ -167,10 +246,10 @@ a{
 
     .nav{
         justify-content: center;
-        border: rgb(255, 255, 255) solid 1px;
     }
 
     .nav .nav-list{
+        border-top: var(--eggshell-white) solid 1px;
         width: 100vw;
     }
 
@@ -178,16 +257,22 @@ a{
         margin: 7px;
     }
 
-    #welcome-section{
+    #welcome-section,
+    #projects{
         padding-top: 100px;
     }
 
-    #welcome-wrap h1{
+    .welcome-text{
         font-size: 3rem;
     }
     
-    #welcome-wrap h2{
+    .section-header{
         font-size: 1.5rem;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -200,15 +285,14 @@ a{
 
     .nav .nav-list li{
         width: 100%;
-    } 
-    
-    #welcome-section{
-        padding-top: 165px;
-    }
-
-    .nav .nav-list li{
         margin: 0px;
         margin-top: 3px;
+        border-bottom: var(--eggshell-white) solid 1px;
+    } 
+    
+    #welcome-section,
+    #projects{
+        padding-top: 165px;
     }
 }
 
