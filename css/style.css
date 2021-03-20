@@ -217,17 +217,65 @@ a{
 }
 
 .github{
-    display: block;
     padding: 10px 0;
-    border-top: var(--claret-red) solid 1px; 
-    background-color: var(--coral-grey);
+    font-size: 1.5rem;
 }
 
 #profile-link{
-    font-size: 1.1rem;
     font-weight: bold;
     color: var(--claret-red);
 }
+
+/* Contact Section 
+============================= */
+
+#contact-section{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    background-color: var(--claret-red);
+}
+
+.contact-links {
+    color: var(--coral-grey);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-info  {
+    color: var(--coral-grey);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .contact-details {
+    color: var(--eggshell-white);
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    margin: 5px;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+    color: var(--caifat-blue);
+  }
+
+  /* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: var(--claret-red);
+    border-top: 4px solid var(--coral-grey);
+}
+
 /* Responsiveness 
 ============================= */
 
@@ -273,6 +321,11 @@ a{
     .projects-grid {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .contact-links,
+    .contact-info {
+        flex-direction: column;
     }
 }
 
