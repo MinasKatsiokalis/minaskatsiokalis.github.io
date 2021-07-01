@@ -186,6 +186,8 @@ a{
     border-radius: 20px;
     background-color: var(--claret-red);
     color: var(--eggshell-white);
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes moving {
@@ -203,7 +205,8 @@ a{
 
 .project-image {
     width: 100%;
-    height: 80%;
+    height: 250px;
+    overflow: hidden;
 }
 
 .project-title {
