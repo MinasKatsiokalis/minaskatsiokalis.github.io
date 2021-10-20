@@ -174,20 +174,21 @@ a{
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-column-gap: 4rem;
-    grid-row-gap: 1rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 1.5rem;
+    justify-items: center;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto 20px;
 }
 
 .project-tile {
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    border: solid 1px black;
+    box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.575);
     border-radius: 20px;
     background-color: var(--claret-red);
     color: var(--eggshell-white);
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
 }
 
 @keyframes moving {
@@ -198,19 +199,21 @@ a{
 
 .project-tile:hover{
     animation: moving;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.575);
     animation-duration: 0.75s;
     animation-timing-function:ease-in;
     animation-iteration-count: 1;
 }
 
 .project-image {
+    border-bottom: solid 1px rgb(0, 0, 0);
     width: 100%;
-    height: 250px;
-    overflow: hidden;
+    max-width: 255px;
+    height: 220px;
 }
 
 .project-title {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 0.5rem 0;
 }
 
@@ -222,6 +225,11 @@ a{
 #profile-link{
     font-weight: bold;
     color: var(--claret-red);
+}
+
+#profile-link:hover{
+    font-weight: bold;
+    color: #d31a5b;
 }
 
 /* Contact Section 
@@ -279,7 +287,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 720px){
     #page-header{
         flex-direction: column;
         justify-content: center;
@@ -310,11 +318,6 @@ footer {
     
     .section-header{
         font-size: 1.5rem;
-    }
-
-    .projects-grid {
-        display: grid;
-        grid-template-columns: 1fr;
     }
 
     .contact-links,
