@@ -8,10 +8,6 @@ var annotated_dup =
           [ "ExplodingViewComponent", "class_m_k_1_1_exploding_view_1_1_core_1_1_exploding_view_component.html", "class_m_k_1_1_exploding_view_1_1_core_1_1_exploding_view_component" ],
           [ "IExplodable", "interface_m_k_1_1_exploding_view_1_1_core_1_1_i_explodable.html", "interface_m_k_1_1_exploding_view_1_1_core_1_1_i_explodable" ]
         ] ],
-        [ "Editor", "namespace_m_k_1_1_exploding_view_1_1_editor.html", [
-          [ "ExplodingViewEditor", "class_m_k_1_1_exploding_view_1_1_editor_1_1_exploding_view_editor.html", "class_m_k_1_1_exploding_view_1_1_editor_1_1_exploding_view_editor" ],
-          [ "ExplodingViewWindow", "class_m_k_1_1_exploding_view_1_1_editor_1_1_exploding_view_window.html", "class_m_k_1_1_exploding_view_1_1_editor_1_1_exploding_view_window" ]
-        ] ],
         [ "Utils", "namespace_m_k_1_1_exploding_view_1_1_utils.html", [
           [ "ExplodablePositions", "struct_m_k_1_1_exploding_view_1_1_utils_1_1_explodable_positions.html", "struct_m_k_1_1_exploding_view_1_1_utils_1_1_explodable_positions" ],
           [ "UtilityFunctions", "class_m_k_1_1_exploding_view_1_1_utils_1_1_utility_functions.html", "class_m_k_1_1_exploding_view_1_1_utils_1_1_utility_functions" ]
