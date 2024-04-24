@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "Exploding View", "index.html", [
+    [ "ExplodingView", "md__c___users__ryhter__desktop__unity__projects__exploding_view_package__assets__plugins__exploding_view_tool__r_e_a_d_m_e.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
       [ "Package Members", "namespacemembers.html", [
@@ -51,7 +52,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_explodable_modifier_8cs.html"
+"_camera_controler_8cs.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
