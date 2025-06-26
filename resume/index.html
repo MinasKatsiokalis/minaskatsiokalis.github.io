@@ -6,11 +6,7 @@
     <title>Minas Katsiokalis Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600&family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/resume.css">
-    <link rel = "icon" href = "../img/MK_logo2_black_white3_300x300.png" type = "image/x-icon">
-    <meta property="og:image" content="./img/MK_logo2_black_white3_300x300.png" />
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
+    <script src="scripts/script.js"></script>
   </head>
   <body>
     <main>
@@ -18,8 +14,7 @@
       <header>
         <div class="content-wrap">
           <h1>Minas Katsiokalis</h1>
-          <p>I am an eXtended Reality (XR) Software Engineer. I have experience on both handheld and head-mounted display (HMD) XR applications,, and I continuously explore the vast potential of XR technology. I have years of hands-on experience in Unity and .NET/C# framework, always investigating smart solutions and optimized methods. I am familiar with agile mythologies and tools. My goal is to contribute to the advancement of immersive technologies and uncover innovative and fun ways to enhance users' experience.</p>
-          <p>Experience in combination of constant improvement and education, is of high importance for me.</p>
+          <p>I am an eXtended Reality (XR) Software Engineer. I have experience on both handheld and head-mounted display (HMD) XR applications,, and I continuously explore the vast potential of XR technology. I have years of hands-on experience in Unity and .NET/C# framework, always investigating smart solutions and optimized methods. I am familiar with agile mythologies and tools. My goal is to contribute to the advancement of immersive technologies and uncover innovative and fun ways to enhance users''' experience. Constant improvement and education, is of high importance for me.</p>
           <div class="links">
             <p>Download <a href="Minas_Katsiokalis_CV.pdf" download="Minas_Katsiokalis_CV"> my CV</a></p>
             <p><a href="https://www.linkedin.com/in/minas-katsiokalis/" target="_blank">LinkedIn</a></p>
@@ -30,32 +25,34 @@
       <!-- ****************  WORK EXPERIENCE  ******************** -->
       <section class="work-experience">
         <div class="content-wrap item-details divider">
-          <h2>EXPERIENCE</h2>
+          <h2 class="collapsible-header active">Experience</h2>
+          <div class="collapsible-content">
           <!-- Job  -->
-          <section class="job-item">
-            <div class="job-details">
+          <section class="job-item hover-expandable">
+            <div class="job-header">
               <h3>XR Software Engineer</h3>
               <p>ANIMA RES GmbH</p>
               <p>August 2024 - Present</p>
             </div>
-            <div class="job-summary">
+            <div class="job-details-content">
               <p>Main responsibilities:</p>
                 <ul>
-                  <li>Part of development pipeline of Mobile & HMD applications (Apple Vision Pro/Hololens/Android/iOS).</li>
-                  <li>Implementation of new features into company's existence app gallery.</li>
-                  <li>Effectively collaborating with 3D and Technical Artists to achieve best quality.</li>
-                  <li>Troubleshooting and upgrading home-brew packages system.</li>
+                  <li>Contribute to the development pipeline of mobile and HMD applications across multiple platforms, including Apple Vision Pro, HoloLens, Android, and iOS.</li>
+                  <li>Implement new features and enhancements for the company’s Insight app gallery, improving functionality and user experience.</li>
+                  <li>Collaborate closely with 3D and technical artists to ensure high-quality visuals and optimal performance.</li>
+                  <li>Maintain, troubleshoot, and upgrade the company’s custom-built package system to support ongoing development needs.</li>
+                  <li>Meet deadlines for publishing updates and new releases of applications (e.g. <a href="https://animares.com/portfolio/insight-heart" target="_blank">Insight Heart</a>), ensuring alignment with project timelines and quality standards. </li>
                 </ul>
             </div>
           </section> 
           <!-- Job  -->
-          <section class="job-item">
-            <div class="job-details">
+          <section class="job-item hover-expandable">
+            <div class="job-header">
               <h3>AR Software Engineer</h3>
               <p>Up2metric</p>
               <p>October 2021 - July 2024</p>
             </div>
-            <div class="job-summary">
+            <div class="job-details-content">
               <p>Main responsibilities:</p>
                 <ul>
                   <li>Design & Implementation of Mobile AR applications using Unity Game Engine (Android/iOS).</li>
@@ -67,13 +64,14 @@
             </div>
           </section>          
           <!-- Job  -->
-          <section class="job-item">
-            <div class="job-details">
+          <section class="job-item hover-expandable">
+            <div class="job-header">
               <h3>XR Software Engineer & Researcher</h3>
               <p>Technical University of Crete</p>
-              <p>September 2021 - Current</p>
+              <p>September 2021 - March 2024</p>
             </div>
-            <div class="job-summary">
+            <div class="job-details-content">
+              <p>Main responsibilities:</p>
                 <ul>
                   <li>Design & Implementation of XR HMD applications using Unity Game Engine (Hololens2/Meta Quest Pro)</li>
                   <li>Research on XR Collaborative environments, and moltimodal communication techniques.</li>
@@ -86,36 +84,36 @@
             </div>
           </section>
           <!-- Job  -->
-          <section class="job-item">
-            <div class="job-details">
+          <section class="job-item hover-expandable">
+            <div class="job-header">
               <h3>Graphics Lab Assistant</h3>
               <p>Technical University of Crete | Electrical & Computer Engineering</p>
               <p>Spring Semester: 2022, 2023</p>
             </div>
-            <div class="job-summary">
+            <div class="job-details-content">
               <p>As post-graduate student I contributed to my M.Sc supervisor’s courses:</p>
                 <ul>
                   <li><strong>Graphics Course (Undergraduate - 4th year):</strong></li>
                   <ul>
-                    <li>Teaching Unity3D to students for Desktop games.</li>
-                    <li>Preparation and testing semester projects ( games in Unity3D )</li>
+                    <li>Delivered practical instruction in Unity3D for desktop game development.</li>
+                    <li>Designed, prepared, and tested semester-long student projects using Unity3D.</li>
                   </ul>
                   <li><strong>Human-Computer Interaction (HCI) Course (Postgraduate):</strong></li>
                   <ul>
-                    <li>Organization & testing of semester project (use-cases, usability evaluation, personas, UX design, prototyping & implementation of a web app)</li>
-                    <li>Preparation and evaluation of course’s material.</li>
+                    <li>Organized and guided the semester project, including use-case design, persona development, usability evaluation, UX design, prototyping, and web app implementation.</li>
+                    <li>Contributed to the preparation, review, and evaluation of course materials and assignments.</li>
                   </ul>
                 </ul>
             </div>
           </section>
           <!-- Job  -->
-          <section class="job-item">
-            <div class="job-details">
+          <section class="job-item hover-expandable">
+            <div class="job-header">
               <h3>AR Researcher & Developer</h3>
               <p>Technical University of Crete | Electrical & Computer Engineering</p>
               <p>Septemebr 2018 - May 2020</p>
             </div>
-            <div class="job-summary">
+            <div class="job-details-content">
               <p>During my last years as undergraduate and as work for my diploma thesis:</p>
                 <ul>
                   <li>Develop a Mobile AR application for Android devices with Unity Game Engine.</li>
@@ -125,74 +123,35 @@
                 </ul>
             </div>
           </section>
-          <!-- Job  -->
-          <!-- <section class="job-item">
-            <div class="job-details">
-              <h3>Website Developer</h3>
-              <p>Freelance</p>
-              <p>January 2019 - August 2021</p>
-            </div>
-            <div class="job-summary">
-              <p>During my last years of studies, I started design and building websites as part-time job. I provided:</p>
-                <ul>
-                  <li>Website development using WordPress, HTML5/CSS and simple scripting using JavaScript.</li>
-                  <li>Online E-shop using WordPress and WooCommerce.</li>
-                  <li>Collaborated with customers to determine needs and design pages to meet goals.</li>
-                  <li>Conducted testing and review of website design for responsiveness, clarity and effectiveness.</li>
-                  <li>Server-side administration, hosting, maintenance and troubleshooting of server-side problems.</li>
-                </ul>
-            </div>
-          </section> -->
-          <!-- Job  -->
-          <!-- <section class="job-item">
-            <div class="job-details">
-              <h3>IT Support Technician (Mandatory Military Service)</h3>
-              <p>Hellenic Army | Department of Research & Informatics</p>
-              <p>June 2020 - March 2021</p>
-            </div>
-            <div class="job-summary">
-              <p>During my nine-months military service, I was part of the IT department of the Hellenic army. My responsibilities were:</p>
-              <ul>
-                <li>Technical Support and Network troubleshooting of the Headquarters of C Army Corps (An organization with over 250 employees working on computer devices)</li> 
-                <li>Processed over 50 support requests weekly for technical assistance on wide range of issues related to Network and Hardware Issues.</li>
-                <li>Reproduce SQL queries for local users’ data base and retouching of the UI.</li>
-                <li>Trained support personnel to provide Tier I support to end users.</li>
-              </ul>
-            </div>
-          </section> -->
+          </div>
+          
         </div>
       </section>
 
       <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
       <section class="education">
         <div class="content-wrap item-details divider">
-          <h2>EDUCATION AND TRAINING</h2>
-          <!-- <section>
-            <h3>M.Sc (Master of Science) in Computer Science and Engineering</h3>
-            <p>Technical University of Crete (Start Date: 09/2021)</p>
-            <ul>
-              <li><strong>Research on the field of Augmented & Mixed Reality:</strong>
-                <ul>
-                  <li>Interaction Techniques and User Interfaces</li>
-                  <li>Multimodal AR</li>
-                  <li>Collaborative AR</li>
-                  <li>Human perception/cognition in AR</li>
-                </ul>
-              </li>
-            </ul>
-          </section> -->
+          <h2 class="collapsible-header">Education & Training</h2>
+          <div class="collapsible-content">
 
-          <section>
-            <h3>Integrated Masters in Electrical and Computer Engineering (MEng - 300 ECTS)</h3>
+          <section class="education-item hover-expandable">
+            <div class="education-header">
+            <h3>MEng, Integrated Masters in Electrical and Computer Engineering<br>(5 Year Course - 300 ECTS)</h3>
             <p>Technical University of Crete</p>
+            </div>
+            <div class="education-details-content">
             <ul>
               <li><strong>Thesis: "Outdoors Mobile Augmented Reality for Coastal Erosion Visualization Based on Geographical Data"</strong> - An AR mobile application developed in the Unity3D game engine for Android and iOS devices. In the two-year period of research and development of my thesis, I gained valuable experience in Unity3D using the most modern packages and frameworks.</li>
             </ul>
+            </div>
           </section>
 
-          <section>
-            <h3>Member of <a href="http://graphics.tuc.gr/" target="_blank">SURREAL TEAM</a></h3>
+          <section class="education-item hover-expandable">
+            <div class="education-header">
+            <h3>Member of <a href="https://surreal.tuc.gr/" target="_blank">SURREAL TEAM</a></h3>
             <p>Technical University of Crete</p>
+            </div>
+            <div class="education-details-content">
             <ul>
               <li><strong>Graphics Lab of T.U.C @ <a href="http://www.music.tuc.gr/" target="_blank">Laboratory of Distributed Multimedia Information Systems and Applications:</a></strong></li>
               <ul>
@@ -201,80 +160,91 @@
                 <li>Presentations to famous researchers in the field of graphics.</li>
               </ul>
             </ul>
+            </div>
           </section>
+          </div>
         </div>
       </section>
 
       <!-- ************  ADDITIONAL SKILLS AND ACHIEVEMNTS  ************ -->
       <section class="skills">
         <div class="content-wrap item-details divider">
-          <h2>SKILLS AND ACHIEVMENTS</h2>
+          <h2 class="collapsible-header">Skills & Achievements</h2>
+          <div class="collapsible-content">
 
-          <section>
-            <h3>TOOLS</h3>
+          <section class="skill-sub-item">
+            <h3 class="collapsible-header-2">TOOLS</h3>
+            <div class="collapsible-content-2">
             <ul>
-              <li><strong>Programmaing Languages:</strong> C#, Python, JavaScript, HTML/CSS, C/C++, SQL</li>
-              <li><strong>Game Engines:</strong> Unity3D, Unreal Engine</li>
-              <li><strong>XR SDKs:</strong> AR Foundation (ARCore/ARKit), Vuforia, MRTK (OpenXR, OculusXR), Meta XR SDK, Lightship ARDK</li>
-              <li><strong>Versioning Control:</strong> Git- Github/Bitbucket</li>
-              <li><strong>DataBases:</strong> PostgreSQL, MySQL</li>
-              <li><strong>Web Platforms/E-Commerce:</strong> Wordpress, Woo-Commerce</li>
-              <li><strong>Photo/Video Editing:</strong> Photoshop, Paint.net, Premiere Pro</li>
-              <li><strong>Server Management Environments:</strong> CPanel, Plesk, Native Win R2012 </li>
+              <li><b>Programmaing Languages:</b> C#, Python, JavaScript, HTML/CSS, C/C++, SQL</li>
+              <li><b>Game Engines:</b> Unity3D, Unreal Engine</li>
+              <li><b>XR Framewaorks & SDKs:</b> AR Foundation (ARCore/ARKit), Vuforia, MRTK (OpenXR, OculusXR), Meta XR SDK, Lightship ARDK</li>
+              <li><b>Versioning Control:</b> Git</li>
+              <li><b>DataBases:</b> PostgreSQL, MySQL</li>
             </ul>
+            </div>
           </section>
 
-          <section id="projects">
-            <h3>PERSONAL PROJECTS</h3>
+          <section id="projects" class="skill-sub-item">
+            <h3 class="collapsible-header-2">PERSONAL PROJECTS</h3>
+            <div class="collapsible-content-2">
             <ul>
-              <!-- <li>XR Collaboration: Research project that aims to evaluates the effectiveness of audio and visual cues in XR collaborative environments. The experience is designed for Hololens2 and Meta Quest Pro and acts as a cross-reality medium where users interact both in AR and VR. [Under Development].</li>               -->
-              <li>Exploding View Tool (Unity Package): A Unity package for exploding view functionality on 3D models. Can be adjusted quickly to any given 3D model. Faster and more optimised workflow comparing to animate each part separately. <a href="https://github.com/MinasKatsiokalis/ExplodingView" target="_blank">Github Link</a></li>
-              <li>GoNature AR: An AR experience, designed for Hololens2 & Meta Quest devices, tailored for non-expert users utilizing mostly speech and audio interactions. The app communicates with a network of sensors through a REST API, and adapts dynamically the visual & audio effects and alternates the narration: <a href="https://github.com/MinasKatsiokalis/GoNatureAR" target="_blank">Hololens2 Github Link</a>, <a href="https://github.com/MinasKatsiokalis/GoNatureAR-MetaQuest" target="_blank">Meta Quest Github Link</a></li>
-              <li>CZAR: Georgioupolis: a Mobile Augmented Reality (MAR) application for coastal erosion visualization on-sight and in real time. User can use his/her smart-device to experience possible disastrous outcomes to the beach of Georgioupoli due to coastal erosion phenomenon: <a href="https://github.com/MinasKatsiokalis/CZAR-Georgioupolis" target="_blank">Github Link</a></li>
-              <li>AlphabetARy: an AR mobile application for helping young children learn the Greek Alphabet alongside the teachers guidance. The user can scan a number of cards (one for each greek letter) to enable a virtual experience where an animal/object pops up with numerous animations and sounds: <a href="https://github.com/MinasKatsiokalis/AlphabetARy" target="_blank">Github Link</a></li>
-              <li>IndoorNav: an AR mobile application for testing on Vuforia Area Targets for Indoor Navigation: <a href="https://github.com/MinasKatsiokalis/Vuforia-IndoorNav" target="_blank">Github Link</a></li>
-              <li>UnSentenced: A game that created for a the Brackeys GameJam 2023.1 with the theme "An end is a new Beginning". It was a collective effort of 8 person-team. Available on: WebGL and Windows. Role: Lead Developer: <a href="https://yinnyann.itch.io/unsentenced" target="_blank">Itch.io</a></li>
-              <li>A random generated dungeon-like map, using 3D Binary Space Partitioning (BSP) algorithm. It separates planes randomly based on BSP creating smaller rooms and routes between them.  Can be used as a random generated map creator on numerous applications: <a href="https://github.com/MinasKatsiokalis/Binary-Space-Partitioning" target="_blank">Github Link</a></li>
-              <li>3D Mini Games made in Unity3D: <a href="https://github.com/MinasKatsiokalis/Bowling-3D-Game" target="_blank">Bowling 3D Game </a>, <a href="https://github.com/MinasKatsiokalis/Ball-Racer-Mini-Game" target="_blank"> Ball Racer 3D Game</a></li>
-              <li>3D Mini Games made in Unreal Engine 4: <a href="https://github.com/MinasKatsiokalis/Crystal-Cavern-Unreal" target="_blank">Crystal Cavern</a>, <a href="https://github.com/MinasKatsiokalis/Marble-Run-Unreal" target="_blank"> Marble Run</a></li>
+              <li data-project-id="exploding-view">Exploding View Tool (Unity Package): A Unity package for exploding view functionality on 3D models. Can be adjusted quickly to any given 3D model. Faster and more optimised workflow comparing to animate each part separately. <a href="https://github.com/MinasKatsiokalis/ExplodingView" target="_blank">Github Link</a></li>
+              <li data-project-id="gonature-ar">GoNature AR: An AR experience, designed for Hololens2 & Meta Quest devices, tailored for non-expert users utilizing mostly speech and audio interactions. The app communicates with a network of sensors through a REST API, and adapts dynamically the visual & audio effects and alternates the narration: <a href="https://github.com/MinasKatsiokalis/GoNatureAR" target="_blank">Hololens2 Github Link</a>, <a href="https://github.com/MinasKatsiokalis/GoNatureAR-MetaQuest" target="_blank">Meta Quest Github Link</a></li>
+              <li data-project-id="czar-georgioupolis">CZAR: Georgioupolis: a Mobile Augmented Reality (MAR) application for coastal erosion visualization on-sight and in real time. User can use his/her smart-device to experience possible disastrous outcomes to the beach of Georgioupoli due to coastal erosion phenomenon: <a href="https://github.com/MinasKatsiokalis/CZAR-Georgioupolis" target="_blank">Github Link</a></li>
+              <li data-project-id="alphabetary">AlphabetARy: an AR mobile application for helping young children learn the Greek Alphabet alongside the teachers guidance. The user can scan a number of cards (one for each greek letter) to enable a virtual experience where an animal/object pops up with numerous animations and sounds: <a href="https://github.com/MinasKatsiokalis/AlphabetARy" target="_blank">Github Link</a></li>
+              <li data-project-id="indoor-nav">IndoorNav: an AR mobile application for testing on Vuforia Area Targets for Indoor Navigation: <a href="https://github.com/MinasKatsiokalis/Vuforia-IndoorNav" target="_blank">Github Link</a></li>
+              <li data-project-id="unsentenced">UnSentenced: A game that created for a the Brackeys GameJam 2023.1 with the theme "An end is a new Beginning". It was a collective effort of 8 person-team. Available on: WebGL and Windows. Role: Lead Developer: <a href="https://yinnyann.itch.io/unsentenced" target="_blank">Itch.io</a></li>
+              <li data-project-id="bsp-dungeon">A random generated dungeon-like map, using 3D Binary Space Partitioning (BSP) algorithm. It separates planes randomly based on BSP creating smaller rooms and routes between them.  Can be used as a random generated map creator on numerous applications: <a href="https://github.com/MinasKatsiokalis/Binary-Space-Partitioning" target="_blank">Github Link</a></li>
+              <li data-project-id="unity-mini-games">3D Mini Games made in Unity3D: <a href="https://github.com/MinasKatsiokalis/Bowling-3D-Game" target="_blank">Bowling 3D Game </a>, <a href="https://github.com/MinasKatsiokalis/Ball-Racer-Mini-Game" target="_blank"> Ball Racer 3D Game</a></li>
+              <li data-project-id="unreal-mini-games">3D Mini Games made in Unreal Engine 4: <a href="https://github.com/MinasKatsiokalis/Crystal-Cavern-Unreal" target="_blank">Crystal Cavern</a>, <a href="https://github.com/MinasKatsiokalis/Marble-Run-Unreal" target="_blank"> Marble Run</a></li>
             </ul>
             <p>* More on my <a href="https://github.com/MinasKatsiokalis" target="_blank">GitHub</a></p>
+            </div>
           </section>
 
-          <section>
-            <h3>PUBLICATIONS</h3>
+          <section class="skill-sub-item">
+            <h3 class="collapsible-header-2">PUBLICATIONS</h3>
+            <div class="collapsible-content-2">
             <ul>
-              <li>ACM International Conference on Interactive Media Experiences (IMX’ 23)</li>
-              <i>"GoNature AR: Air Quality & Noise Visualization Through a Multimodal and Interactive Augmented Reality Experience" - <a href="https://dl.acm.org/doi/10.1145/3573381.3597229" target="_blank">ACM Library</a></i>
-              <li>7th International Conference on Smart and Sustainable Technologies (SpliTech)</li>
-              <i>"On the integration of nature-based solutions with digital innovation for health and wellbeing in cities" - <a href="https://ieeexplore.ieee.org/document/9854269" target="_blank">IEEE Xplore</a></i>
-              <li>International Workshop on Cross-Reality (XR) Interaction @ ACM ISS 2020 </li>
-              <i>"Outdoors Mobile Augmented Reality for Coastal Erosion Visualization, based on Geographical Data" - <a href="https://xr.famnit.upr.si/#proceedings" target="_blank">Workshop Proceedings</a></i>
+              <li><b>"Engineering a BIM-Based Mixed Reality Application for the Life-Cycle Management of Buildings"</b>, International Conference on Extended Reality, XR Salento 2024 - <a href="https://link.springer.com/chapter/10.1007/978-3-031-71707-9_18" target="_blank">Springer Link</a></li>
+              <li><b>"The Intersection of the Green and the Smart City: A Data Platform for Health and Well-Being through Nature-Based Solutions"</b>, MDPI, Smart Cities 2024, 7(1), 1-32 - <a href="https://www.mdpi.com/2624-6511/7/1/1" target="_blank">Journal Article</a></li>
+              <li><b>"GoNature AR: Air Quality & Noise Visualization Through a Multimodal and Interactive Augmented Reality Experience"</b>, ACM International Conference on Interactive Media Experiences (IMX’ 23) - <a href="https://dl.acm.org/doi/10.1145/3573381.3597229" target="_blank">ACM Library</a></li>
+              <li><b>"On the integration of nature-based solutions with digital innovation for health and wellbeing in cities"</b>, 7th International Conference on Smart and Sustainable Technologies (SpliTech) - <a href="https://ieeexplore.ieee.org/document/9854269" target="_blank">IEEE Xplore</a></li>
+              <li><b>"Outdoors Mobile Augmented Reality for Coastal Erosion Visualization, based on Geographical Data"</b>, International Workshop on Cross-Reality (XR) Interaction @ ACM ISS 2020 - <a href="https://xr.famnit.upr.si/#proceedings" target="_blank">Workshop Proceedings</a></li>
             </ul>
             <p>* <a href="https://scholar.google.com/citations?user=6ZxrEc0AAAAJ&hl=el&oi=ao" target="_blank">Google Scholar</a></p>
+            </div>
           </section>    
 
-          <section>
-            <h3>AWARDS</h3>
+          <section class="skill-sub-item">
+            <h3 class="collapsible-header-2">AWARDS</h3>
+            <div class="collapsible-content-2">
             <ul>
-              <li><strong>Best Demo Award</strong> - ACM International Conference on Interactive Media Experiences (IMX’ 23)</li>
-              <i>Received "Best Demo Award" of the conference by Tobbi for the demo: "GoNature AR".</i>
-              <li><strong>Winner of "Innovation" Category</strong> - Brackeys GameJam 2023.1</li>
-              <i>Category winners for the game: "UnSentenced".</i>
+              <li><strong>Best Demo Award</strong> - ACM International Conference on Interactive Media Experiences (IMX’ 23)<br>
+                <i>Received "Best Demo Award" of the conference by Tobbi for the demo: "GoNature AR".</i>
+              </li>
+              <li><strong>Winner of "Innovation" Category</strong> - Brackeys GameJam 2023.1<br>
+                <i>Category winners for the game: "UnSentenced".</i>
+              </li>
             </ul>
+            </div>
           </section>
 
-          <section>
-            <h3>VOLUNTEERING</h3>
+          <section class="skill-sub-item">
+            <h3 class="collapsible-header-2">VOLUNTEERING</h3>
+            <div class="collapsible-content-2">
             <ul>
               <li>Paper reviewer in <a href="https://ieeevr.org/2023/" target="_blank">IEEE VR 2023</a> & <a href="https://ieeevr.org/2024/" target="_blank">2024</a></li>
-              <li>Participation as a volunteer in Open Science Days held by Technical University of Crete, showcasing AR/VR applications to young audiences. As a member of <a href="http://graphics.tuc.gr/" target="_blank">SURREAL TEAM</a>. | 04/2017,2018,2019</li>
-              <li>Participation as a volunteer in The Mediterranean Researchers’ Night, <a href="http://graphics.tuc.gr/" target="_blank"></a>MEDNIGHT 2021</a> as a member of <a href="http://graphics.tuc.gr/" target="_blank">SURREAL TEAM</a> showcasing AR and VR experiences to the public audience in the streets of Chania in Crete. | 24/09/2021</li>
+              <li>Participation as a volunteer in Open Science Days held by Technical University of Crete, showcasing AR/VR applications to young audiences. As a member of <a href="https://surreal.tuc.gr/" target="_blank">SURREAL TEAM</a>. | 04/2017,2018,2019</li>
+              <li>Participation as a volunteer in The Mediterranean Researchers’ Night - <a href="https://mednight.eu/" target="_blank">MEDNIGHT</a>, as a member of <a href="https://surreal.tuc.gr/" target="_blank">SURREAL TEAM</a> showcasing AR and VR experiences to the public audience in the streets of Chania in Crete. | 24/09/2021</li>
             </ul>
+            </div>
           </section>
 
-          <section>
-            <h3>SOFT SKILLS</h3>
+          <section class="skill-sub-item">
+            <h3 class="collapsible-header-2">SOFT SKILLS</h3>
+            <div class="collapsible-content-2">
             <ul>
               <li>Good communication and contact skills gained through my participation in conferences and presentations.</li>
               <li>Excellent collaboration in teams, gained through my experience in my current positions.</li>
@@ -284,23 +254,30 @@
               <li>Accountable.</li>
               <li>Good sense of humor.</li>
             </ul>
+            </div>
           </section>
 
-          <section>
-            <h3>LANGUAGES</h3>
+          <section class="skill-sub-item">
+            <h3 class="collapsible-header-2">LANGUAGES</h3>
+            <div class="collapsible-content-2">
             <ul>
               <li>English (Fluent)</li>
               <li>Greek (Native)</li>
               <li>German (Beginner)</li>
             </ul>
-          </section>
-
-          <section>
-            <h3>DRIVING LICENSE</h3>
-            <p>Full European (type B)</p>
+            </div>
           </section>
         </div>
       </section>
     </main>
+
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <div id="modal-links"></div>
+      </div>
+    </div>
   </body>
 </html>

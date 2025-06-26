@@ -1,3 +1,14 @@
+:root {
+  --color-primary-dark: #212121; /* Dark grey / near black */
+  --color-secondary-light: #F5F5F5; /* Light grey / off-white */
+  --color-accent: #757575; /* Medium grey for accents */
+  --color-text-dark: #424242; /* Very dark grey for text */
+  --color-text-light: #E0E0E0; /* Light grey for text on dark backgrounds */
+  --font-primary: 'Quicksand', 'Open Sans', sans-serif;
+  --font-secondary: 'Poiret One', cursive;
+  --spacing-unit: 15px;
+}
+
 /* Global styles
 ------------------------------------*/
 html {
@@ -9,12 +20,12 @@ html {
 }
 
 body {
-  color: #343434;
+  color: var(--color-text-dark);
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', 'Open Sans', sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 img {
@@ -22,7 +33,7 @@ img {
 }
 
 a {
-  color: #C5C3C6;
+  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -33,10 +44,12 @@ a:hover {
 h1 {
   font-size: 60px;
   line-height: 1;
+  font-family: var(--font-secondary);
 }
 
 h2 {
   font-size: 30px;
+  font-family: var(--font-secondary);
 }
 
 h1, h2 {
@@ -44,15 +57,16 @@ h1, h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
 .content-wrap {
   max-width: 800px;
   width: 85%;
   margin: 0 auto;
-  padding: 60px 0;
-}
-
-h3 {
-  margin-bottom: 0;
+  padding: calc(2 * var(--spacing-unit)) 0;
 }
 
 .item-details h3 + p {
@@ -66,32 +80,58 @@ h3 {
 /* Profile
 ------------------------------------*/
 header {
-  background: #071013;
-  color: #F7FFF7;
+  background: var(--color-primary-dark);
+  color: var(--color-text-light);
+  padding-top: calc(2 * var(--spacing-unit));
+  padding-bottom: calc(2 * var(--spacing-unit));
+}
+
+header h1 {
+  color: var(--color-accent);
 }
 
 .links{
   display: flex;
   justify-content: center;
+  margin-top: var(--spacing-unit);
 }
 
 .links p{
-  margin: 10px;
+  margin: 0 var(--spacing-unit);
 }
+
+.links a {
+  color: var(--color-text-light);
+}
+
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  background: #F7FFF7;
-  color: black;
+  background: var(--color-secondary-light);
+  color: var(--color-text-dark);
 }
 
 .work-experience a{
-  color:#808080;
+  color: var(--color-accent);
+}
+
+.work-experience .collapsible-content {
+  display: block;
+}
+
+.job-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid transparent; /* To prevent layout shift on hover */
+  transition: all 0.3s ease-in-out;
+  margin-bottom: var(--spacing-unit);
+  width: 100%;
 }
 
 .divider > section {
-  border-bottom: 1px solid #343434;
-  padding: 25px 0;
+  border-bottom: 1px solid var(--color-text-dark);
+  padding: calc(1.5 * var(--spacing-unit)) 0;
 }
 
 .divider > section:last-of-type {
@@ -101,52 +141,309 @@ header {
 /* Education
 ------------------------------------*/
 .education {
-  background: #808080; 
-  color: white;
-  padding-bottom: 20px;
+  background: var(--color-primary-dark); 
+  color: var(--color-text-light);
 }
 
 .education a{
-  color: #343434;
+  color: var(--color-accent);
 }
 
 .education p {
-  width: 60%;
+  width: 100%; /* Adjusted for better flow */
 }
 
 .education .divider > section{
-  border-bottom: 1px solid #F7FFF7;
+  border-bottom: 1px solid var(--color-text-light);
 }
 
-.divider > section:last-of-type {
-  border-bottom: none;
-}
-
-/* Contact Info
+/* Skills and Achievements
 ------------------------------------*/
 .skills {
-  background: #343434;
-  color: #F7FFF7;
+  background: var(--color-text-dark);
+  color: var(--color-text-light);
 }
 
 .skills a{
-  color: #C5C3C6;
-}
-.contact-list {
-  list-style-type: none;
-  padding: 0;
-}
-.contact-list a {
-  padding: 15px;
-  display: inline-block;
+  color: #ffffff;
 }
 
 .skills .divider > section{
-  border-bottom: 1px solid #F7FFF7;
+  border-bottom: 1px solid var(--color-text-light);
 }
 
-.divider > section:last-of-type {
-  border-bottom: none;
+.collapsible-header-2 {
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px; /* Space for the arrow */
+}
+
+.collapsible-header-2::after {
+  content: '\25BC'; /* Down arrow */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.collapsible-header-2.active::after {
+  content: '\25B2'; /* Up arrow */
+}
+
+.collapsible-content-2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.skills .collapsible-content-2 ul {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--spacing-unit);
+}
+
+.skills .collapsible-content-2 li {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.skills .collapsible-content-2 li::before {
+  content: '';
+}
+
+/* Collapsible Sections */
+.collapsible-header {
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px; /* Space for the arrow */
+}
+
+.collapsible-header::after {
+  content: '\25BC'; /* Down arrow */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.collapsible-header.active::after {
+  content: '\25B2'; /* Up arrow */
+}
+
+.collapsible-content {
+  display: none; /* Hidden by default */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapsible-header.active + .collapsible-content {
+  display: block;
+}
+
+.collapsible-header {
+  cursor: pointer;
+  position: relative;
+  padding-right: 30px; /* Space for the arrow */
+}
+
+.collapsible-header::after {
+  content: '\25BC'; /* Down arrow */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.collapsible-header.active::after {
+  content: '\25B2'; /* Up arrow */
+}
+
+
+
+/* Skill Bars */
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+.skills li::before {
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: var(--color-accent);
+  width: 0%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 1s ease-in-out;
+}
+
+.skills li span {
+  position: relative;
+  z-index: 1;
+  color: var(--color-text-light);
+}
+
+/* Job Item Hover Expand */
+.job-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid transparent; /* To prevent layout shift on hover */
+  transition: all 0.3s ease-in-out;
+  margin-bottom: var(--spacing-unit);
+  width: 48%; /* Two columns with some space */
+}
+
+.job-item:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.job-header {
+  padding: var(--spacing-unit);
+  background-color: var(--color-secondary-light);
+  color: var(--color-text-dark);
+  border-bottom: 1px solid var(--color-text-dark);
+}
+
+.job-item:hover .job-header {
+  background-color: var(--color-accent);
+  color: var(--color-text-light);
+}
+
+.job-details-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  padding: 0 var(--spacing-unit);
+  background-color: var(--color-secondary-light);
+}
+
+.job-item:hover .job-details-content {
+  max-height: 500px; /* Adjust as needed to fit content */
+  padding-bottom: var(--spacing-unit);
+}
+
+.job-details-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.job-details-content ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+/* Education Item Hover Expand */
+.education-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid transparent; /* To prevent layout shift on hover */
+  transition: all 0.3s ease-in-out;
+  margin-bottom: var(--spacing-unit);
+  width: 48%; /* Two columns with some space */
+}
+
+.education-item:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.education-header {
+  padding: var(--spacing-unit);
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  border-bottom: 1px solid var(--color-text-light);
+}
+
+.education-item:hover .education-header {
+  background-color: var(--color-accent);
+  color: var(--color-text-light);
+}
+
+.education-item:hover a {
+  color: var(--color-secondary-light);
+}
+
+.education-details-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  padding: 0 var(--spacing-unit);
+  background-color: var(--color-primary-dark);
+}
+
+.education-item:hover .education-details-content {
+  max-height: 500px; /* Adjust as needed to fit content */
+  padding-bottom: var(--spacing-unit);
+}
+
+.education-details-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.education-details-content ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: var(--color-secondary-light);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-button {
+  color: var(--color-text-dark);
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: var(--color-accent);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Responsive
@@ -161,9 +458,10 @@ header {
   }
 
   .job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
+    width: 100%; /* Ensure full width */
+  }
+  .education-item {
+    width: 100%; /* Ensure full width */
   }
   .contact-list {
     display: flex;
@@ -173,12 +471,19 @@ header {
 
 @media screen and (max-width:749px){
   h1 {
-    font-size: 60px;
-    line-height: 0.9;
-    margin-bottom: 20px;
+    font-size: 48px; /* Adjusted for smaller screens */
+    line-height: 1.1;
+    margin-bottom: var(--spacing-unit);
   }
   h2 {
-    line-height: 1;
+    font-size: 24px; /* Adjusted for smaller screens */
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 20px; /* Adjusted for smaller screens */
+  }
+  .links p {
+    margin: 0 calc(var(--spacing-unit) / 2);
   }
   .contact-list a {
     padding: 5px;
