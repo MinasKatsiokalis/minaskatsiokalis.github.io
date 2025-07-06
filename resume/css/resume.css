@@ -488,4 +488,8 @@ header h1 {
   .contact-list a {
     padding: 5px;
   }
+  .job-item,
+  .education-item {
+    width: 100% !important;
+  }
 }
